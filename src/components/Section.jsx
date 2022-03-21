@@ -32,8 +32,6 @@ function Section({
   );
 }
 
-export default Section;
-
 const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
@@ -87,3 +85,4 @@ const DownArrow = styled.img`
   animation: animDown infinite 1.5s;
   overflow-x: hidden;
 `;
+export default Section;

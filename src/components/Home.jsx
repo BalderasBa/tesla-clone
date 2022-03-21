@@ -33,7 +33,7 @@ function Home() {
         leftBtnTxt="Custom Order"
         rightBtnTxt="Existing Inventory"
       />
-      <Section 
+      <Section
         title="Solar Panels"
         description="Lowest Cost Solar Panels in America"
         backgroundImg="solar-panel.jpg"
@@ -60,5 +60,5 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
 `;

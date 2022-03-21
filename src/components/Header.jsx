@@ -28,7 +28,7 @@ function Header() {
         <a href="#" onClick={() => setSideStatus(true)}>
           Menu
         </a>
-        {/* <CustomMenu onClick={() => setSideStatus(true)} /> */}
+        <CustomMenu onClick={() => setSideStatus(true)} />
       </RightMenu>
       <SideNav show={sideStatus}>
         <CustomClose onClick={() => setSideStatus(false)} />
@@ -75,9 +75,11 @@ function Header() {
           <a href="#">Investor Relations</a>
         </li>
         <li>
-          <a href="#">
-            United State <span>English</span>
-          </a>
+          <select name="" id="">
+            <option value="en_US">English (English)</option>
+            <option value="ar_AE">العربية (Arabic)</option>
+            <option value="fr_FR">Français (French)</option>
+          </select>
         </li>
       </SideNav>
     </Container>
@@ -95,6 +97,10 @@ const Container = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10001;
+  @media (max-width: 991px) {
+    justify-content: space-between;
+  }
 `;
 const Menu = styled.div`
   display: flex;
@@ -102,12 +108,19 @@ const Menu = styled.div`
   justify-content: center;
   flex: 1;
   a {
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 15px;
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 250ms ease-in;
+    &:hover {
+      background-color: #0001;
+    }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     display: none;
   }
 `;
@@ -117,14 +130,39 @@ const RightMenu = styled.div`
   align-items: center;
 
   a {
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     margin-right: 10px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 250ms ease-in;
+    &:hover {
+      background-color: #0001;
+    }
+    &:last-of-type {
+      font-weight: 600;
+
+      @media (max-width: 991px) {
+        display: none;
+        opacity: 0;
+      }
+    }
+    @media (max-width: 991px) {
+      margin-right: 50px;
+    }
   }
 `;
 
 const CustomMenu = styled(MenuOutlined)`
   cursor: pointer;
+  display: none;
+  opacity: 0;
+  transition: 250ms;
+  @media (max-width: 991px) {
+    display: block;
+    opacity: 1;
+  }
 `;
 
 const SideNav = styled.div`
@@ -134,6 +172,7 @@ const SideNav = styled.div`
   right: 0;
   background-color: white;
   width: 300px;
+  overflow-y: scroll;
   z-index: 100;
   padding: 20px;
   display: flex;
@@ -146,6 +185,14 @@ const SideNav = styled.div`
     a {
       font-weight: 600;
     }
+  }
+
+  select {
+    cursor: pointer;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
   }
 `;
 const CustomClose = styled(CloseOutlined)`
