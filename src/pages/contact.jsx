@@ -1,10 +1,41 @@
-import React from "react";
+import React, { useState, useRef, useMemo } from "react";
 import styled from "styled-components";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+import Select from "react-select";
+import countryList from "react-select-country-list";
+
+import emailjs from "@emailjs/browser";
+
 function Contact() {
+  const [value, setValue] = useState("");
+  const options = useMemo(() => countryList().getData(), []);
+
+  const changeHandler = (value) => {
+    setValue(value);
+  };
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_47534h8",
+        "template_rrb91nz",
+        form.current,
+        "W0EmDK59FerjHCy1d"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <Header />
@@ -15,18 +46,18 @@ function Contact() {
             Many common questions are answered on our Blog and Support pages.
           </p>
         </div>
-        <Form>
+        <Form ref={form} onSubmit={sendEmail}>
           <Input>
             <label htmlFor="first-name">First Name</label>
-            <input type="text" id="first-name" />
+            <input type="text" id="first-name" required />
           </Input>
           <Input>
             <label htmlFor="last-name">Last Name</label>
-            <input type="text" id="last-name" />
+            <input type="text" id="last-name" required />
           </Input>
           <Input>
             <label htmlFor="select-topic">Topic</label>
-            <select type="text" id="select-topic">
+            <select type="text" id="select-topic" required>
               <option value="">Ordering a Tesla Powerwall or Solar Roof</option>
               <option value="">
                 Becoming a Tesla Energy Products Certified Installer
@@ -35,39 +66,56 @@ function Contact() {
           </Input>
           <Input>
             <label htmlFor="contact-preference">Contact Preference</label>
-            <select type="text" id="contact-preference">
+            <select type="text" id="contact-preference" required>
               <option value="phone">Phone</option>
               <option value="email">Email</option>
             </select>
           </Input>
           <Input>
             <label htmlFor="phone">Phone Number</label>
-            <input type="tel" id="phone" />
+            <input type="tel" id="phone" required />
           </Input>
           <Input>
             <label htmlFor="email">Email Address</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" required />
           </Input>
           <Input>
             <label htmlFor="password">Password</label>
-            <input type="email" id="password" />
+            <input type="password" id="password" required />
           </Input>
           <Input style={{ gridArea: "2/3/4/4" }}>
             <label htmlFor="comment">Question/Comment</label>
-            <textarea name="comment" id="comment" />
+            <textarea name="comment" id="comment" required />
           </Input>
+          <Input>
+            <label htmlFor="zipcode">Zip Code</label>
+            <input type="text" id="zipcode" required />
+          </Input>
+          <Input>
+            <label htmlFor="region">Region</label>
+            <Select
+              id="region"
+              options={options}
+              value={value}
+              onChange={changeHandler}
+            />
+          </Input>
+          <div style={{ gridArea: "4 / 1 / 4 / 4" }}>
+            <p>
+              By clicking "Submit" I agree to be contacted at the number
+              provided with more information or offers about Tesla products. I
+              understand these calls or texts may use computer-assisted dialing
+              or pre-recorded messages. This consent is not a condition of
+              purchase.
+            </p>
+          </div>
+          <div
+            className="submit"
+            style={{ gridColumnStart: "3", justifySelf: "end" }}
+          >
+            <input type="submit" value="Submit" />
+          </div>
         </Form>
-        <div>
-          <p>
-            By clicking "Submit" I agree to be contacted at the number provided
-            with more information or offers about Tesla products. I understand
-            these calls or texts may use computer-assisted dialing or
-            pre-recorded messages. This consent is not a condition of purchase.
-          </p>
-        </div>
-        <div>
-          <input type="submit" value="Submit" style={{ float: "right" }} />
-        </div>
       </Container>
       <Footer />
     </>
@@ -80,7 +128,7 @@ const Container = styled.div`
   flex-direction: column;
   margin-right: 8%;
   margin-left: 8%;
-  input {
+  .submit input {
     outline: none;
     border: none;
     background-color: #3d69e1;
@@ -100,10 +148,10 @@ const Container = styled.div`
     }
   }
 `;
-const Form = styled.div`
+const Form = styled.form`
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: repeat(4, minmax(70px, 100px));
+  grid-template-rows: repeat(5, minmax(70px, 100px));
   column-gap: 20px;
 `;
 const Input = styled.div`
@@ -168,20 +216,6 @@ const Input = styled.div`
   textarea {
     resize: vertical;
     height: 150px;
-  }
-  a {
-    background-color: #3d69e1;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-align: center;
-    display: block;
-    width: 100%;
-    text-transform: uppercase;
-    transition: 200ms ease-in;
-    &:hover {
-      background-color: #3457b2;
-    }
   }
 `;
 export default Contact;
