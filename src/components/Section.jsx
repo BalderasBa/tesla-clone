@@ -9,6 +9,21 @@ function Section({
   rightBtnTxt,
   backgroundImg,
 }) {
+  window.addEventListener("keydown", function (event) {
+    let pageHeight = window.innerHeight;
+    console.log(event.key);
+    switch (event.key) {
+      case "ArrowUp" && "PageUp":
+        event.preventDefault();
+        window.scrollBy(0, -pageHeight);
+        break;
+      case "ArrowDown" && "PageDown":
+        event.preventDefault();
+        window.scrollBy(0, pageHeight);
+
+        break;
+    }
+  });
   return (
     <Wrap bgImage={backgroundImg}>
       <Fade bottom>
