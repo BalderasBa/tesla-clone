@@ -11,14 +11,16 @@ function Section({
 }) {
   window.addEventListener("keydown", function (event) {
     let pageHeight = window.innerHeight;
-    console.log(event.key);
+    event.preventDefault();
     switch (event.key) {
-      case "ArrowUp" && "PageUp":
-        event.preventDefault();
+      case "ArrowUp":
+        window.scrollBy(0, -pageHeight);
+      case "PageUp":
         window.scrollBy(0, -pageHeight);
         break;
-      case "ArrowDown" && "PageDown":
-        event.preventDefault();
+      case "ArrowDown":
+        window.scrollBy(0, pageHeight);
+      case "PageDown":
         window.scrollBy(0, pageHeight);
 
         break;
