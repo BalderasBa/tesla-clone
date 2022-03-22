@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Section from "./Section";
 
-function Home() {
+function Main() {
   return (
     <Container>
       <Section
@@ -57,7 +57,7 @@ function Home() {
   );
 }
 
-export default Home;
+export default Main;
 
 const Container = styled.div`
   /* height: 100vh; */

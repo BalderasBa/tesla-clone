@@ -6,6 +6,7 @@ const Foot = styled.div`
   justify-content: center;
   min-height: 50px;
   gap: 20px;
+  margin-top: 30px;
   a {
     color: #555;
     cursor: pointer;

@@ -5,7 +5,7 @@ import { selectCars } from "../features/car/CarSlice";
 import { useSelector } from "react-redux";
 
 function Header() {
-  const [sideStatus, setSideStatus] = useState(false);
+  const [sideMenu, setSideMenu] = useState(false);
   // const cars = useSelector(selectCars);
 
   return (
@@ -25,13 +25,13 @@ function Header() {
       <RightMenu>
         <a href="#">Shop</a>
         <a href="#">Account</a>
-        <a href="#" onClick={() => setSideStatus(true)}>
+        <a href="#" onClick={() => setSideMenu(true)}>
           Menu
         </a>
-        <CustomMenu onClick={() => setSideStatus(true)} />
+        <CustomMenu onClick={() => setSideMenu(true)} />
       </RightMenu>
-      <SideNav show={sideStatus}>
-        <CustomClose onClick={() => setSideStatus(false)} />
+      <SideNav show={sideMenu}>
+        <CustomClose onClick={() => setSideMenu(false)} />
         <li>
           <a href="#">Existing Inventory</a>
         </li>
@@ -174,10 +174,13 @@ const SideNav = styled.div`
   width: 300px;
   overflow-y: scroll;
   z-index: 100;
-  padding: 20px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: start;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
   transform: ${(props) => (props.show ? "TranslateX(0)" : "TranslateX(100%)")};
   transition: transform 300ms;
   li {
@@ -196,6 +199,11 @@ const SideNav = styled.div`
   }
 `;
 const CustomClose = styled(CloseOutlined)`
+  position: absolute;
   align-self: flex-end;
   cursor: pointer;
+  border-radius: 50%;
+  &:hover {
+    background-color: #0001;
+  }
 `;

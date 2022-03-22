@@ -1,7 +1,7 @@
 import React from "react";
 
-function contact() {
+function Contact() {
   return <div>// I'll use Email.js here</div>;
 }
 
-export default contact;
+export default Contact;
