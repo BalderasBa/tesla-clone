@@ -34,7 +34,7 @@ function Footer() {
     <Foot>
       <a href="#">Tesla &copy; {new Date().getFullYear()} </a>
       <a href="#">Privacy & Legal</a>
-      <a href="#">Contact</a>
+      <a href="/contact">Contact</a>
       <a href="#">Careers</a>
       <a href="#">News</a>
       <a href="#">Engage</a>

@@ -22,7 +22,6 @@ function Section({
         window.scrollBy(0, pageHeight);
       case "PageDown":
         window.scrollBy(0, pageHeight);
-
         break;
     }
   });
