@@ -11,18 +11,23 @@ function Section({
 }) {
   window.addEventListener("keydown", function (event) {
     let pageHeight = window.innerHeight;
-    event.preventDefault();
     switch (event.key) {
       case "ArrowUp":
+        event.preventDefault();
         window.scrollBy(0, -pageHeight);
       case "PageUp":
+        event.preventDefault();
         window.scrollBy(0, -pageHeight);
         break;
       case "ArrowDown":
+        event.preventDefault();
         window.scrollBy(0, pageHeight);
       case "PageDown":
+        event.preventDefault();
         window.scrollBy(0, pageHeight);
         break;
+      default:
+        return;
     }
   });
   return (

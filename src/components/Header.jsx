@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <Container>
-      <a href="/">
+      <a href="/home">
         <img src="./images/logo.svg" alt="logo" />
       </a>
       <Menu>
@@ -86,7 +86,6 @@ function Header() {
   );
 }
 
-export default Header;
 
 const Container = styled.div`
   min-height: 60px;
@@ -207,3 +206,4 @@ const CustomClose = styled(CloseOutlined)`
     background-color: #0001;
   }
 `;
+export default Header;
