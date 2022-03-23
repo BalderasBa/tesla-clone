@@ -49,7 +49,7 @@ function Contact() {
         <Form ref={form} onSubmit={sendEmail}>
           <Input>
             <label htmlFor="first-name">First Name</label>
-            <input type="text" id="first-name" required />
+            <input type="text" id="first-name" required name="user_name" />
           </Input>
           <Input>
             <label htmlFor="last-name">Last Name</label>
@@ -77,7 +77,7 @@ function Contact() {
           </Input>
           <Input>
             <label htmlFor="email">Email Address</label>
-            <input type="email" id="email" required />
+            <input type="email" id="email" required name="user_email" />
           </Input>
           <Input>
             <label htmlFor="password">Password</label>
@@ -100,7 +100,7 @@ function Contact() {
               onChange={changeHandler}
             />
           </Input>
-          <div style={{ gridArea: "4 / 1 / 4 / 4" }}>
+          <div style={{ gridArea: "5 / 1 / 5 / 3" }}>
             <p>
               By clicking "Submit" I agree to be contacted at the number
               provided with more information or offers about Tesla products. I
@@ -111,7 +111,11 @@ function Contact() {
           </div>
           <div
             className="submit"
-            style={{ gridColumnStart: "3", justifySelf: "end" }}
+            style={{
+              gridColumnStart: "3",
+              gridRowStart: "5",
+              justifySelf: "end",
+            }}
           >
             <input type="submit" value="Submit" />
           </div>

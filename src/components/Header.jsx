@@ -23,8 +23,8 @@ function Header() {
         <a href="#">Solqr Panels</a>
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Account</a>
+        <a href="/shop">Shop</a>
+        <a href="/account">Account</a>
         <a href="#" onClick={() => setSideMenu(true)}>
           Menu
         </a>
