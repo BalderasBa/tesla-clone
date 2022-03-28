@@ -9,12 +9,14 @@ import {
 
 function ShopNav() {
   const [meganum, setMeganum] = useState(0);
+  const [search, setSearch] = useState(false);
+  const [sideMenu, setSideMenu] = useState(false);
 
-  const renderContent = React.useCallback(() => {
+  const renderContent = useCallback(() => {
     switch (meganum) {
       case 1:
         return (
-          <MegaMenu key={1}>
+          <MegaMenu onMouseLeave={() => setMeganum(0)} key={1}>
             <Ul>
               <li>
                 <a href="#">At Home</a>
@@ -38,7 +40,7 @@ function ShopNav() {
         );
       case 2:
         return (
-          <MegaMenu key={2}>
+          <MegaMenu onMouseLeave={() => setMeganum(0)} key={2}>
             <Ul>
               <li>
                 <a href="#">Model S</a>
@@ -147,7 +149,7 @@ function ShopNav() {
         );
       case 3:
         return (
-          <MegaMenu key={3}>
+          <MegaMenu onMouseLeave={() => setMeganum(0)} key={3}>
             <Ul>
               <li>
                 <a href="#">Men</a>
@@ -228,7 +230,7 @@ function ShopNav() {
         );
       case 4:
         return (
-          <MegaMenu key={4}>
+          <MegaMenu onMouseLeave={() => setMeganum(0)} key={4}>
             <Ul>
               <li>
                 <a href="#">At Home</a>
@@ -276,17 +278,34 @@ function ShopNav() {
           </a>
         </Menu>
         <RightMenu>
-          <a href="#">
-            <Search />
-          </a>
+          <div className={search ? "search" : ""}>
+            {search && (
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Tap to search"
+              />
+            )}
+
+            <a href="#">
+              <Search
+                onClick={() => {
+                  !search ? setSearch(true) : setSearch(false);
+                }}
+              />
+            </a>
+          </div>
           <a href="#">
             <ShoppingCart />
           </a>
-          <a href="#">Menu</a>
-          <CustomMenu />
+          <a href="#" onClick={() => setSideMenu(true)}>
+            Menu
+          </a>
+          <CustomMenu onClick={() => setSideMenu(true)} />
         </RightMenu>
-        <SideNav>
-          <CustomClose />
+        <SideNav show={sideMenu}>
+          <CustomClose onClick={() => setSideMenu(false)} />
           <li>
             <a href="#">Shop FAQ</a>
           </li>
@@ -302,28 +321,31 @@ function ShopNav() {
           </li>
         </SideNav>
       </Container>
-      <div className="container">{renderContent()}</div>
+      <div>{renderContent()}</div>
     </>
   );
 }
-const Hz = styled.h2`
-  margin-top: 10px;
-`;
-const Image = styled.div`
-  img {
-    height: 200px;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
+const MegaMenu = styled.div`
+  border-top: 1px solid #0004;
+  position: absolute;
+  top: 60px;
+  z-index: 500;
+  background-color: #fff9;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  transition: 300ms ease-in;
 `;
 const Ul = styled.ul`
   width: 200px;
+  margin-bottom: 20px;
+
   li:first-child {
-    border-bottom: 2px solid #0005;
+    border-bottom: 3px solid #0005;
     padding-bottom: 10px;
     a {
-      color: #000;
+      font-weight: bold;
     }
   }
   li {
@@ -333,28 +355,37 @@ const Ul = styled.ul`
     padding-bottom: 10px;
     padding-top: 10px;
     a {
-      color: #0008;
+      display: inline-block;
+      color: #000;
+      transition: 200ms;
+      &:hover {
+        font-weight: bold;
+        transform: translateX(2px);
+      }
     }
   }
 `;
-const MegaMenu = styled.div`
-  position: absolute;
-  z-index: 500;
-  background-color: #fff8;
-  height: 75vh;
-  width: 100%;
-  /* margin-top: 12vh; */
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  transition: 300ms ease-in;
+const Image = styled.div`
+  margin-top: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+`;
+const Hz = styled.h2`
+  margin-top: 10px;
+  text-align: center;
 `;
 
 // ------------------------
 // ------------------------
 // ------------------------
 const Container = styled.div`
-  min-height: 60px;
+  height: 60px;
   position: fixed;
   display: flex;
   align-items: center;
@@ -368,8 +399,24 @@ const Container = styled.div`
   }
   :hover {
     background-color: #fff;
+    a {
+      color: #000;
+    }
+    .MuiSvgIcon-root,
+    .search .MuiSvgIcon-root {
+      color: black;
+    }
+    input,
+    input:focus,
+    input:active {
+      color: #000;
+      &::placeholder {
+        color: #000;
+      }
+    }
   }
   a {
+    color: #fff;
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
@@ -397,6 +444,7 @@ const Menu = styled.div`
 const RightMenu = styled.div`
   display: flex;
   align-items: center;
+
   a {
     &:last-of-type {
       font-weight: 600;
@@ -407,6 +455,29 @@ const RightMenu = styled.div`
     }
     @media (max-width: 991px) {
       margin-right: 50px;
+    }
+  }
+  .MuiSvgIcon-root {
+    color: #fff;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #0005;
+
+    input {
+      outline: none;
+      border: none;
+      caret-color: red;
+      padding: 3px 10px;
+      background-color: transparent;
+      color: #fff;
+      &::placeholder {
+        color: #fff;
+      }
     }
   }
 `;
@@ -460,5 +531,4 @@ const CustomClose = styled(CloseOutlined)`
     background-color: #0001;
   }
 `;
-
 export default ShopNav;

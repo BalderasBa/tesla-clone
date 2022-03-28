@@ -10,15 +10,15 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-      <BrowserRouter className="App">
-       <Routes>
-         <Route path="/" element={<Signin />} />
-         <Route path="/signup" element={<Signup />} />
-         <Route path="/home" element={<Home />} />
-         <Route path="/shop" element={<Shop />} />
-         <Route path="/account" element={<Account />} />
-         <Route path="/contact" element={<Contact />} />
-       </Routes>
+    <BrowserRouter className="App">
+      <Routes>
+        <Route path="/" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </BrowserRouter>
   );
 }

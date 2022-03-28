@@ -103,12 +103,14 @@ const Container = styled.div`
   display: flex;
 `;
 const LeftSideAccount = styled.div`
+  a {
+    color: #000;
+  }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 10px;
   margin-right: 5vw;
-  /* position: fixed; */
 `;
 const Ul = styled.ul`
   margin-top: 4vh;

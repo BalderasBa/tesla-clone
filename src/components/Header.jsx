@@ -86,7 +86,6 @@ function Header() {
   );
 }
 
-
 const Container = styled.div`
   min-height: 60px;
   position: fixed;
@@ -99,6 +98,9 @@ const Container = styled.div`
   z-index: 10001;
   @media (max-width: 991px) {
     justify-content: space-between;
+  }
+  a {
+    color: #000;
   }
 `;
 const Menu = styled.div`

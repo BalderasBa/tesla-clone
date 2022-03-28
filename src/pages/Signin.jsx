@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 function Signin() {
   const [emailvalid, setEmailvalid] = useState(false);
-  const [href, setHref] = useState(false);
+  const [hreff, setHreff] = useState(false);
   return (
     <div>
       <Head>
@@ -56,10 +56,15 @@ function Signin() {
           )}
           <Input>
             <a
-              href={emailvalid ? "/home" : "#"}
-              onClick={() => setEmailvalid(true)}
+              href={hreff ? "/home" : "#"}
+              onClick={() => {
+                setEmailvalid(true);
+                setTimeout(() => {
+                  setHreff(true);
+                }, 200);
+              }}
             >
-              {!emailvalid ? "Next" : "Sign In"}
+              {!hreff ? "Next" : "Sign In"}
             </a>
           </Input>
           <Forgot>
