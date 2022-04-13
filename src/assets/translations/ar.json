@@ -9,5 +9,31 @@
   "signin.forgot.email": "نسيت البريد الإلكتروني ؟",
   "signin.forgot.pass": "نسيت كلمة المرور ؟",
   "signin.forgot.or": "أو",
-  "signin.forgot.create": "إنشاء حساب"
+  "signin.forgot.create": "إنشاء حساب",
+
+  "home.model": "نموذج",
+  "home.solarr": "سقف شمسي",
+  "home.solarp": "الألواح الشمسية",
+  "home.shop": "متجر",
+  "home.account": "الحساب",
+  "home.menu": "قائمة",
+
+  "home.menu.existing": "الجرد الحالي",
+  "home.menu.used": "الجرد المستعمل",
+  "home.menu.trade": "تجارة في",
+  "home.menu.test": "اختبار القيادة",
+  "home.menu.cybertruck": "شاحنة إلكترونية",
+  "home.menu.roadster": "رودستر",
+  "home.menu.semi": "نصف",
+  "home.menu.charging": "الشحن",
+  "home.menu.powerwall": "بوورال",
+  "home.menu.commercial": "الطاقة التجارية",
+  "home.menu.utilities": "خدمات",
+  "home.menu.find": "تجدنا",
+  "home.menu.support": "الدعم",
+  "home.menu.investor": "علاقات المستثمرين",
+
+  "section.order": "اطلب عبر الإنترنت للتسليم بدون لمس",
+  "section.custom": "اطلب الزبون",
+  "section.existing": "الجرد الحالي"
 }

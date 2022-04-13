@@ -9,5 +9,38 @@
   "signin.forgot.email": "Forgot email ?",
   "signin.forgot.pass": "Forgot password ?",
   "signin.forgot.or": "Or",
-  "signin.forgot.create": "Create Account"
+  "signin.forgot.create": "Create Account",
+
+  "home.model": "model",
+  "home.solarr": "solar roof",
+  "home.solarp": "solar panels",
+  "home.shop": "shop",
+  "home.account": "account",
+
+  "section.order": "Order Online for Touchless Delivery",
+  "section.custom": "Custom order",
+  "section.existing": "existing inventory",
+
+  "home.menu": "menu",
+  "home.menu.existing": "Existing Inventory",
+  "home.menu.used": "Used Inventory",
+  "home.menu.trade": "Trade-In",
+  "home.menu.test": "Test Drive",
+  "home.menu.cybertruck": "Cybertruck",
+  "home.menu.roadster": "Roadster",
+  "home.menu.semi": "Semi",
+  "home.menu.charging": "Charging",
+  "home.menu.powerwall": "Powerwall",
+  "home.menu.commercial": "Commercial Energy",
+  "home.menu.utilities": "Utilities",
+  "home.menu.find": "Find Us",
+  "home.menu.support": "Support",
+  "home.menu.investor": "Investor Relations",
+
+  "footer.privacy": "Privacy & Legal",
+  "footer.contact": "Contact",
+  "footer.career": "Careers",
+  "footer.news": "News",
+  "footer.engage": "Engage",
+  "footer.locations": "Locations"
 }

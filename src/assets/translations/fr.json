@@ -9,5 +9,31 @@
   "signin.forgot.email": "E-mail oublié ?",
   "signin.forgot.pass": "Mot de passe oublié ?",
   "signin.forgot.or": "Ou",
-  "signin.forgot.create": "Créer un compte"
+  "signin.forgot.create": "Créer un compte",
+
+  "home.model": "modèle",
+  "home.solarr": "toit solaire",
+  "home.solarp": "panneaux solaires",
+  "home.shop": "magasin",
+  "home.account": "compte",
+  "home.menu": "menu",
+
+  "home.menu.existing": "Inventaire existant",
+  "home.menu.used": "Inventaire d'occasion",
+  "home.menu.trade": "Échange",
+  "home.menu.test": "Essai routier",
+  "home.menu.cybertruck": "Cybertruck",
+  "home.menu.roadster": "Roadster",
+  "home.menu.semi": "Semi",
+  "home.menu.charging": "Mise en charge",
+  "home.menu.powerwall": "Powerwall",
+  "home.menu.commercial": "Énergie commerciale",
+  "home.menu.utilities": "Utilitaires",
+  "home.menu.find": "Trouve nous",
+  "home.menu.support": "Support",
+  "home.menu.investor": "Relations avec les investisseurs",
+
+  "section.order": "Commandez en ligne pour une livraison sans contact",
+  "section.custom": "Commande personnalisée",
+  "section.existing": "inventaire existant"
 }
