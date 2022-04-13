@@ -49,15 +49,15 @@ function Contact() {
         <Form ref={form} onSubmit={sendEmail}>
           <Input>
             <label htmlFor="first-name">First Name</label>
-            <input type="text" id="first-name" required name="user_name" />
+            <input type="text" id="first-name" required name="first_name" />
           </Input>
           <Input>
             <label htmlFor="last-name">Last Name</label>
-            <input type="text" id="last-name" required />
+            <input type="text" id="last-name" required name="last_name" />
           </Input>
           <Input>
             <label htmlFor="select-topic">Topic</label>
-            <select type="text" id="select-topic" required>
+            <select type="text" id="select-topic">
               <option value="">Ordering a Tesla Powerwall or Solar Roof</option>
               <option value="">
                 Becoming a Tesla Energy Products Certified Installer
@@ -66,26 +66,26 @@ function Contact() {
           </Input>
           <Input>
             <label htmlFor="contact-preference">Contact Preference</label>
-            <select type="text" id="contact-preference" required>
+            <select type="text" id="contact-preference">
               <option value="phone">Phone</option>
               <option value="email">Email</option>
             </select>
           </Input>
           <Input>
             <label htmlFor="phone">Phone Number</label>
-            <input type="tel" id="phone" required />
+            <input type="tel" id="phone" required name="phone_number" />
           </Input>
           <Input>
             <label htmlFor="email">Email Address</label>
             <input type="email" id="email" required name="user_email" />
           </Input>
           <Input>
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password is just for confirmation</label>
             <input type="password" id="password" required />
           </Input>
           <Input style={{ gridArea: "2/3/4/4" }}>
             <label htmlFor="comment">Question/Comment</label>
-            <textarea name="comment" id="comment" required />
+            <textarea name="message" id="comment" required />
           </Input>
           <Input>
             <label htmlFor="zipcode">Zip Code</label>

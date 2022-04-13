@@ -1,0 +1,13 @@
+{
+  "signin.h1": "Connexion",
+  "signin.next": "Suivant",
+  "signin.email.label": "Adresse e-mail",
+  "signin.email.label.p": "Si votre compte est lié à une adresse e-mail à laquelle vous n'avez plus accès, veuillez vous connecter à votre compte et mettre à jour votre adresse e-mail dans les paramètres du compte.",
+  "signin.email.label.p.br": "Si vous rencontrez des difficultés pour vous connecter, rendez-vous sur notre",
+  "signin.email.label.p.span": "page d'assistance",
+  "signin.password.label": "Mot de passe",
+  "signin.forgot.email": "E-mail oublié ?",
+  "signin.forgot.pass": "Mot de passe oublié ?",
+  "signin.forgot.or": "Ou",
+  "signin.forgot.create": "Créer un compte"
+}

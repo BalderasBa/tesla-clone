@@ -1,0 +1,13 @@
+{
+  "signin.h1": "تسجيل الدخول",
+  "signin.next": "التالي",
+  "signin.email.label": "البريد الكتروني",
+  "signin.email.label.p": "إذا كان حسابك مرتبطًا بعنوان بريد إلكتروني لم يعد بإمكانك الوصول إليه ، فالرجاء تسجيل الدخول إلى حسابك وتحديث عنوان بريدك الإلكتروني ضمن إعدادات الحساب.",
+  "signin.email.label.p.br": "إذا كنت تواجه مشكلة في تسجيل الدخول ، يرجى زيارة ",
+  "signin.email.label.p.span": "صفحة الدعم",
+  "signin.password.label": "كلمة المرور",
+  "signin.forgot.email": "نسيت البريد الإلكتروني ؟",
+  "signin.forgot.pass": "نسيت كلمة المرور ؟",
+  "signin.forgot.or": "أو",
+  "signin.forgot.create": "إنشاء حساب"
+}

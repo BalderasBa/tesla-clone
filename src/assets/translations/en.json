@@ -1,0 +1,13 @@
+{
+  "signin.h1": "Sign In",
+  "signin.next": "Next",
+  "signin.email.label": "Email Address",
+  "signin.email.label.p": "If your account is linked to an email address you no longer have access to, please sign into your account and update your email address under account settings.",
+  "signin.email.label.p.br": "If you have trouble signing in, please visit our",
+  "signin.email.label.p.span": "support page",
+  "signin.password.label": "Password",
+  "signin.forgot.email": "Forgot email ?",
+  "signin.forgot.pass": "Forgot password ?",
+  "signin.forgot.or": "Or",
+  "signin.forgot.create": "Create Account"
+}

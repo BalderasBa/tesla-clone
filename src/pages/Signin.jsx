@@ -1,56 +1,51 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { InfoOutlined, LanguageOutlined } from "@material-ui/icons";
+import { InfoOutlined } from "@material-ui/icons";
 
 import Footer from "../components/Footer";
+import Langue from "../components/Langue";
+import { useTranslation } from "react-i18next";
 
 function Signin() {
   const [emailvalid, setEmailvalid] = useState(false);
   const [hreff, setHreff] = useState(false);
+  const { t } = useTranslation();
   return (
     <div>
       <Head>
         <a href="/">
           <img src="./images/logo.svg" alt="logo" />
         </a>
-        <Langue>
-          <LanguageOutlined />
-          <select name="" id="">
-            <option value="en_US">English (English)</option>
-            <option value="ar_AE">العربية (Arabic)</option>
-            <option value="fr_FR">Français (French)</option>
-          </select>
-        </Langue>
+        <Langue />
       </Head>
       <Container>
         <Or>
-          <h1>Sign In</h1>
+          <h1>{t("signin.h1")}</h1>
         </Or>
         <Form>
           <Input>
             <label htmlFor="email">
-              Email Address
+              {t("signin.email.label")}
               <span>
                 <CustumHelp />
               </span>
               <p>
-                If your account is linked to an email adress you no longer have
-                accessto, please sign into your account and update your email
-                adress under account settings.
+                {t("signin.email.label.p")}
                 <br />
-                If you have trouble signing in, please visit our
-                <span>support page</span>
+                {t("signin.email.label.p.br")}
+                <span>{t("signin.email.label.p.span")}</span>
               </p>
             </label>
             <input
               type="email"
               id="email"
               placeholder="e.g: your.email@gmail.com"
+              required
             />
           </Input>
           {emailvalid && (
             <Input>
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">{t("signin.password.label")}</label>
               <input id="password" type="password" />
             </Input>
           )}
@@ -64,22 +59,22 @@ function Signin() {
                 }, 200);
               }}
             >
-              {!hreff ? "Next" : "Sign In"}
+              {!hreff ? t("signin.next") : t("signin.h1")}
             </a>
           </Input>
           <Forgot>
-            <a href="#">Forgot email?</a>
-            <a href="#">Forgot password?</a>
+            <a href="#">{t("signin.forgot.email")}</a>
+            <a href="#">{t("signin.forgot.pass")}</a>
           </Forgot>
         </Form>
         <Or>
           <hr />
-          Or
+          {t("signin.forgot.or")}
           <hr />
         </Or>
         <Form>
           <CreateAcount>
-            <a href="/signup">Create Account</a>
+            <a href="/signup">{t("signin.forgot.create")}</a>
           </CreateAcount>
         </Form>
       </Container>
@@ -100,12 +95,6 @@ const Container = styled.div`
     line-height: 45px;
     letter-spacing: 0.5px;
   }
-`;
-const Langue = styled.div`
-  display: flex;
-  background-color: #0001;
-  padding: 5px 10px;
-  border-radius: 5px;
 `;
 const Head = styled.div`
   display: flex;

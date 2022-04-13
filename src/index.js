@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { Provider } from "react-redux";
-// import "./i18nextConf";
+import "./i18nextConf";
 
 import "./index.css";
 import App from "./App";
