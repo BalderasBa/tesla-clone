@@ -4,6 +4,8 @@ import { MenuOutlined, CloseOutlined } from "@material-ui/icons";
 import { selectCars } from "../features/car/CarSlice";
 import { useSelector } from "react-redux";
 
+import logo from "../assets/images/logo.svg";
+
 function Header() {
   const [sideMenu, setSideMenu] = useState(false);
   // const cars = useSelector(selectCars);
@@ -11,7 +13,7 @@ function Header() {
   return (
     <Container>
       <a href="/home">
-        <img src="./images/logo.svg" alt="logo" />
+        <img src={logo} alt="logo" />
       </a>
       <Menu>
         {/* {cars && cars.map((car, index) => <a key={index} href="#">{car}</a>)} */}

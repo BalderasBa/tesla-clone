@@ -13,6 +13,11 @@ import {
 } from "@material-ui/icons";
 import Footer from "../components/Footer";
 
+// Images:
+import solarpanel from "../assets/images/solar-panel.jpg";
+import teslacars from "../assets/images/Tesla-cars.webp";
+import newinterior from "../assets/images/new-interior.jpg";
+
 function Account() {
   return (
     <div>
@@ -70,19 +75,20 @@ function Account() {
           <MainHead>Dashboard</MainHead>
           <Boxes>
             <Box>
-              <img src="/images/solar-panel.jpg" alt="" />
+              <img src={solarpanel} alt="" />
               <p>Order Tesla Solar</p>
               <span>Produce energy to power your Tesla life</span>
               <a href="#">View Solar</a>
             </Box>
             <Box>
-              <img src="/images/Tesla-cars.webp" alt="" />
+              <img src={teslacars} alt="" />
+
               <p>Reserve a Car</p>
               <span>Produce energy to power your Tesla life</span>
               <a href="/shope">Shop Now</a>
             </Box>
             <Box>
-              <img src="/images/new-interior.jpg" alt="" />
+              <img src={newinterior} alt="" />
               <p>Purchased a car from a third party?</p>
               <a href="#">Add</a>
             </Box>

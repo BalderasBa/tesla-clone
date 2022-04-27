@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
+
+// Images:
+import downarrowsvg from "../assets/images/down-arrow.svg";
+
 function Section({
   title,
   description,
@@ -31,7 +35,7 @@ function Section({
     }
   });
   return (
-    <Wrap bgImage={backgroundImg}>
+    <Wrap bgImage={backgroundImg} >
       <Fade bottom>
         <ItemText>
           <h1>{title}</h1>
@@ -48,7 +52,7 @@ function Section({
           </Fade>
         </ButtonGroup>
         <DownArrow
-          src="./images/down-arrow.svg"
+          src={downarrowsvg}
           onClick={() => {
             let pageHeight = window.innerHeight;
             window.scrollBy(0, pageHeight);
@@ -62,7 +66,7 @@ function Section({
 const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: ${(props) => `url(/images/${props.bgImage})`};
+  background-image: ${(props) => `url(${props.bgImage})`};
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

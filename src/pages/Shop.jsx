@@ -9,6 +9,19 @@ import Footer from "../components/Footer";
 import "../App.css"; //react-elastic-carousel style
 import BestCarousel from "../components/BestCarousel";
 
+// Images:
+import carouselshop1 from "../assets/images/carousel-shop1.avif";
+import carouselshop2 from "../assets/images/carousel-shop2.avif";
+import carouselshop3 from "../assets/images/carousel-shop3.avif";
+import shopmodels from "../assets/images/shop-category-models.avif";
+import shopmodel3 from "../assets/images/shop-category-model3.avif";
+import shopmodelx from "../assets/images/shop-category-modelx.avif";
+import shopmodely from "../assets/images/shop-category-modely.avif";
+import shopcharging from "../assets/images/shop-category-charging.avif";
+import shopmensapp  from "../assets/images/shop-category-mensapp.avif";
+import shopwomensapp  from "../assets/images/shop-category-womensapp.avif";
+import shoplifestyle  from "../assets/images/shop-category-lifestyle.avif";
+
 function Shop() {
   return (
     <Container>
@@ -23,17 +36,17 @@ function Shop() {
       >
         <CaroselItem>
           <a href="#">
-            <img src="/images/carousel-shop1.avif" />
+            <img src={carouselshop1} />
           </a>
         </CaroselItem>
         <CaroselItem>
           <a href="#">
-            <img src="/images/carousel-shop2.avif" />
+            <img src={carouselshop2} />
           </a>
         </CaroselItem>
         <CaroselItem>
           <a href="#">
-            <img src="/images/carousel-shop3.avif" />
+            <img src={carouselshop3} />
           </a>
         </CaroselItem>
       </Carousel>
@@ -43,49 +56,49 @@ function Shop() {
         <Category style={{ gridArea: "s" }}>
           <a href="#">
             <h3>Model S Accessoiries</h3>
-            <img src="/images/shop-category-models.avif" alt="" />
+            <img src={shopmodels} alt="" />
           </a>
         </Category>
         <Category style={{ gridArea: "t" }}>
           <a href="#">
             <h3>Model 3 Accessoiries</h3>
-            <img src="/images/shop-category-model3.avif" alt="" />
+            <img src={shopmodel3} alt="" />
           </a>
         </Category>
         <Category style={{ gridArea: "x" }}>
           <a href="#">
             <h3>Model X Accessoiries</h3>
-            <img src="/images/shop-category-modelx.avif" alt="" />
+            <img src={shopmodelx} alt="" />
           </a>
         </Category>
         <Category style={{ gridArea: "y" }}>
           <a href="#">
             <h3>Model Y Accessoiries</h3>
-            <img src="/images/shop-category-modely.avif" alt="" />
+            <img src={shopmodely} alt="" />
           </a>
         </Category>
         <Category style={{ gridArea: "c" }}>
           <a href="#">
             <h3>Charging</h3>
-            <img src="/images/shop-category-charging.avif" alt="" />
+            <img src={shopcharging} alt="" />
           </a>
         </Category>
         <Category style={{ gridArea: "m" }}>
           <a href="#">
             <h3>Men's Apparel</h3>
-            <img src="/images/shop-category-mensapp.avif" alt="" />
+            <img src={shopmensapp} alt="" />
           </a>
         </Category>
         <Category style={{ gridArea: "w" }}>
           <a href="#">
             <h3>Women's Apparel</h3>
-            <img src="/images/shop-category-womensapp.avif" alt="" />
+            <img src={shopwomensapp} alt="" />
           </a>
         </Category>
         <Category style={{ gridArea: "l" }}>
           <a href="#">
             <h3>Life Style</h3>
-            <img src="/images/shop-category-lifestyle.avif" alt="" />
+            <img src={shoplifestyle} alt="" />
           </a>
         </Category>
       </Categories>

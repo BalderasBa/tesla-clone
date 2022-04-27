@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import Langue from "../components/Langue";
 import { useTranslation } from "react-i18next";
 
+import logo from "../assets/images/logo.svg";
+
 function Signin() {
   const [emailvalid, setEmailvalid] = useState(false);
   const [hreff, setHreff] = useState(false);
@@ -14,7 +16,7 @@ function Signin() {
     <div>
       <Head>
         <a href="/">
-          <img src="./images/logo.svg" alt="logo" />
+          <img src={logo} alt="logo" />
         </a>
         <Langue />
       </Head>

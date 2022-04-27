@@ -6,6 +6,11 @@ import {
   Search,
   ShoppingCart,
 } from "@material-ui/icons";
+// Images:
+import wallconnector from "../assets/images/wall_connector.jpg";
+import chillpulloverhoodie from "../assets/images/chill-pullover-hoodie.jpg";
+import wirelessportablecharger from "../assets/images/wireless-portable-charger.jpg";
+import logo from "../assets/images/logo.svg";
 
 function ShopNav() {
   const [meganum, setMeganum] = useState(0);
@@ -33,7 +38,7 @@ function ShopNav() {
               </li>
             </Ul>
             <Image>
-              <img src="/images/wall_connector.jpg" alt="" />
+              <img src={wallconnector} alt="" />
               <Hz>Wall Connector</Hz>
             </Image>
           </MegaMenu>
@@ -223,7 +228,7 @@ function ShopNav() {
               </li>
             </Ul>
             <Image>
-              <img src="/images/chill-pullover-hoodie.jpg" alt="" />
+              <img src={chillpulloverhoodie} alt="" />
               <Hz>Chill Pullover Hoodie</Hz>
             </Image>
           </MegaMenu>
@@ -247,7 +252,7 @@ function ShopNav() {
               </li>
             </Ul>
             <Image>
-              <img src="/images/wireless-portable-charger.jpg" alt="" />
+              <img src={wirelessportablecharger} alt="" />
               <Hz>Wireless Portable Charger 2.0</Hz>
             </Image>
           </MegaMenu>
@@ -260,7 +265,7 @@ function ShopNav() {
     <>
       <Container>
         <a href="/home">
-          <img src="./images/logo.svg" alt="logo" />
+        <img src={logo} alt="logo" />
         </a>
         <a href="/shop">Shop</a>
         <Menu>

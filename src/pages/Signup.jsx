@@ -4,6 +4,8 @@ import { InfoOutlined, LanguageOutlined } from "@material-ui/icons";
 
 import ReCAPTCHA from "react-google-recaptcha";
 import Footer from "../components/Footer";
+import logo from "../assets/images/logo.svg";
+
 function Signup() {
   const recaptchaRef = React.createRef();
   const onSubmit = () => {
@@ -14,7 +16,7 @@ function Signup() {
     <div>
       <Head>
         <a href="/">
-          <img src="./images/logo.svg" alt="logo" />
+          <img src={logo} alt="logo" />
         </a>
         <Langue>
           <LanguageOutlined />
