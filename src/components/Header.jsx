@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <Container>
-      <a href="/home">
+      <a href="/teslaclone/home">
         <img src={logo} alt="logo" />
       </a>
       <Menu>
@@ -25,8 +25,8 @@ function Header() {
         <a href="#">Solqr Panels</a>
       </Menu>
       <RightMenu>
-        <a href="/shop">Shop</a>
-        <a href="/account">Account</a>
+        <a href="/teslaclone/shop">Shop</a>
+        <a href="/teslaclone/account">Account</a>
         <a href="#" onClick={() => setSideMenu(true)}>
           Menu
         </a>

@@ -264,10 +264,10 @@ function ShopNav() {
   return (
     <>
       <Container>
-        <a href="/home">
+        <a href="home">
         <img src={logo} alt="logo" />
         </a>
-        <a href="/shop">Shop</a>
+        <a href="shop">Shop</a>
         <Menu>
           <a href="#" onMouseOver={() => setMeganum(1)}>
             Charging
@@ -315,7 +315,7 @@ function ShopNav() {
             <a href="#">Shop FAQ</a>
           </li>
           <li>
-            <a href="/">Sign In</a>
+            <a href="/  teslaclone">Sign In</a>
           </li>
           <li>
             <select name="" id="">

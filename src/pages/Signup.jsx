@@ -15,7 +15,7 @@ function Signup() {
   return (
     <div>
       <Head>
-        <a href="/">
+        <a href="/teslaclone">
           <img src={logo} alt="logo" />
         </a>
         <Langue>
@@ -124,7 +124,7 @@ function Signup() {
         </Or>
         <Form>
           <CreateAcount>
-            <a href="/">Sign In</a>
+            <a href="/teslaclone">Sign In</a>
           </CreateAcount>
         </Form>
       </Container>

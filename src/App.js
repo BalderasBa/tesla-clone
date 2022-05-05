@@ -12,12 +12,12 @@ function App() {
   return (
     <BrowserRouter className="App">
       <Routes>
-        <Route path="/" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/account" element={<Account />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/teslaclone" element={<Signin />} />
+        <Route path="teslaclone/signup" element={<Signup />} />
+        <Route path="teslaclone/home" element={<Home />} />
+        <Route path="teslaclone/shop" element={<Shop />} />
+        <Route path="teslaclone/account" element={<Account />} />
+        <Route path="teslaclone/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

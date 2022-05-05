@@ -15,7 +15,7 @@ const Foot = styled.div`
       color: #000;
     }
     @media (max-width: 991px) {
-      &:nth-of-type(3),
+      &:nth-of-type(2),
       &:nth-of-type(6),
       &:last-of-type {
         display: none;
@@ -34,7 +34,7 @@ function Footer() {
     <Foot>
       <a href="#">Tesla &copy; {new Date().getFullYear()} </a>
       <a href="#">Privacy & Legal</a>
-      <a href="/contact">Contact</a>
+      <a href="contact">Contact</a>
       <a href="#">Careers</a>
       <a href="#">News</a>
       <a href="#">Engage</a>

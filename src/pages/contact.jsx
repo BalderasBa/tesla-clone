@@ -12,7 +12,7 @@ import emailjs from "@emailjs/browser";
 function Contact() {
   const [value, setValue] = useState("");
   const options = useMemo(() => countryList().getData(), []);
-
+  console.log(options);
   const changeHandler = (value) => {
     setValue(value);
   };

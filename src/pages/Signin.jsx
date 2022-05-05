@@ -15,7 +15,7 @@ function Signin() {
   return (
     <div>
       <Head>
-        <a href="/">
+        <a href="/teslaclone">
           <img src={logo} alt="logo" />
         </a>
         <Langue />
@@ -53,7 +53,7 @@ function Signin() {
           )}
           <Input>
             <a
-              href={hreff ? "/home" : "#"}
+              href={hreff ? "/teslaclone/home" : "#"}
               onClick={() => {
                 setEmailvalid(true);
                 setTimeout(() => {
@@ -76,7 +76,7 @@ function Signin() {
         </Or>
         <Form>
           <CreateAcount>
-            <a href="/signup">{t("signin.forgot.create")}</a>
+            <a href="/teslaclone/signup">{t("signin.forgot.create")}</a>
           </CreateAcount>
         </Form>
       </Container>
