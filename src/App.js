@@ -13,11 +13,11 @@ function App() {
     <BrowserRouter className="App">
       <Routes>
         <Route path="/teslaclone" element={<Signin />} />
-        <Route path="teslaclone/signup" element={<Signup />} />
-        <Route path="teslaclone/home" element={<Home />} />
-        <Route path="teslaclone/shop" element={<Shop />} />
-        <Route path="teslaclone/account" element={<Account />} />
-        <Route path="teslaclone/contact" element={<Contact />} />
+        <Route path="/teslaclone/signup" element={<Signup />} />
+        <Route path="https://balderasba.github.io/teslaclone/home" element={<Home />} />
+        <Route path="/teslaclone/shop" element={<Shop />} />
+        <Route path="/teslaclone/account" element={<Account />} />
+        <Route path="/teslaclone/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
