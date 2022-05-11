@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/teslaclone/static/css/main.d6f4bdbf.css",
-    "main.js": "/teslaclone/static/js/main.e83cae16.js",
+    "main.js": "/teslaclone/static/js/main.1ec6a42c.js",
     "static/media/best-sellers1.gif": "/teslaclone/static/media/best-sellers1.641d4bf64a76ace9d843.gif",
     "static/media/solar-roof.jpg": "/teslaclone/static/media/solar-roof.acfd904501bf0bea5f9c.jpg",
     "static/media/solar-panel.jpg": "/teslaclone/static/media/solar-panel.d7d441d74e34d37c2c00.jpg",
@@ -35,10 +35,10 @@
     "index.html": "/teslaclone/index.html",
     "static/media/down-arrow.svg": "/teslaclone/static/media/down-arrow.9b52668fb01a76a29986dae3032abd3f.svg",
     "main.d6f4bdbf.css.map": "/teslaclone/static/css/main.d6f4bdbf.css.map",
-    "main.e83cae16.js.map": "/teslaclone/static/js/main.e83cae16.js.map"
+    "main.1ec6a42c.js.map": "/teslaclone/static/js/main.1ec6a42c.js.map"
   },
   "entrypoints": [
     "static/css/main.d6f4bdbf.css",
-    "static/js/main.e83cae16.js"
+    "static/js/main.1ec6a42c.js"
   ]
 }
