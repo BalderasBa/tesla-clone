@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import React from "react";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Shop from "./pages/Shop";
@@ -12,12 +12,12 @@ function App() {
   return (
     <BrowserRouter className="App">
       <Routes>
-        <Route path="/teslaclone" element={<Signin />} />
-        <Route path="/teslaclone/signup" element={<Signup />} />
-        <Route path="https://balderasba.github.io/teslaclone/home" element={<Home />} />
-        <Route path="/teslaclone/shop" element={<Shop />} />
-        <Route path="/teslaclone/account" element={<Account />} />
-        <Route path="/teslaclone/contact" element={<Contact />} />
+        <Route path="/teslaclone" exact element={<Signin />} />
+        <Route path="/teslaclone/signup" exact element={<Signup />} />
+        <Route path="/teslaclone/home" exact element={<Home />} />
+        <Route path="/teslaclone/shop" exact element={<Shop />} />
+        <Route path="/teslaclone/account" exact element={<Account />} />
+        <Route path="/teslaclone/contact" exact element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

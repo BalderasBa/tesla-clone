@@ -1,4 +1,9 @@
 {
+  "langue.en": "English",
+  "langue.ar": "Arabic",
+  "langue.fr": "French",
+  "tesla": "Tesla",
+
   "signin.h1": "Sign In",
   "signin.next": "Next",
   "signin.email.label": "Email Address",
@@ -21,6 +26,13 @@
   "section.custom": "Custom order",
   "section.existing": "existing inventory",
 
+  "section.ordernow": "order now",
+  "section.learn": "learn more",
+  "section.solar": "Lowest Cost Solar Panels in America",
+  "section.roof": "Produce Clean Energy From Your Roof",
+  "section.accssoir": "Accessories",
+  "home.shopnow": "shop now",
+
   "home.menu": "menu",
   "home.menu.existing": "Existing Inventory",
   "home.menu.used": "Used Inventory",
@@ -42,5 +54,41 @@
   "footer.career": "Careers",
   "footer.news": "News",
   "footer.engage": "Engage",
-  "footer.locations": "Locations"
+  "footer.locations": "Locations",
+
+  "shopnav.charging": "Charging",
+  "shopnav.charging.home": "At Home",
+  "shopnav.charging.otr": "On the road",
+  "shopnav.charging.parts": "Parts",
+  "shopnav.charging.wc": "Wall Connector",
+
+  "shopnav.va": "Vehicule Accessories",
+  "shopnav.va.bs": "Best Sellers",
+  "shopnav.va.inter": "Interior",
+  "shopnav.va.exter": "Exterior",
+  "shopnav.va.wat": "Wheels and Tires",
+  "shopnav.va.fm": "Floor Mats",
+  "shopnav.va.parts": "Parts",
+  "shopnav.va.keys": "Keys",
+
+  "shopnav.apparel": "Apparel",
+  "shopnav.apparel.men": "Men",
+  "shopnav.apparel.women": "Women",
+  "shopnav.apparel.kids": "Kids",
+  "shopnav.apparel.cph": "Chill Pullover Hoodie",
+
+  "shopnav.apparel.bs": "Best Sellers",
+  "shopnav.apparel.tees": "Tees",
+  "shopnav.apparel.swandhoo": "Sweatshirts & Hoodies",
+  "shopnav.apparel.outerw": "OuterWear",
+  "shopnav.apparel.joggers": "Joggers",
+  "shopnav.apparel.hats": "Hats",
+  "shopnav.apparel.socks": "Socks",
+
+  "shopnav.lifestyle": "Lifestyle",
+  "shopnav.lifestyle.athome": "At Home",
+  "shopnav.lifestyle.ontr": "On the road",
+  "shopnav.lifestyle.parts": "Parts",
+  "shopnav.lifestyle.wpc": "Wireless Portable Charger 2.0",
+  "shopnav.faq": "Shop faq"
 }

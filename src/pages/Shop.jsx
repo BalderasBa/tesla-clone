@@ -9,6 +9,8 @@ import Footer from "../components/Footer";
 import "../App.css"; //react-elastic-carousel style
 import BestCarousel from "../components/BestCarousel";
 
+import ScrolTtop from "../components/ScrolTtop";
+
 // Images:
 import carouselshop1 from "../assets/images/carousel-shop1.avif";
 import carouselshop2 from "../assets/images/carousel-shop2.avif";
@@ -18,9 +20,9 @@ import shopmodel3 from "../assets/images/shop-category-model3.avif";
 import shopmodelx from "../assets/images/shop-category-modelx.avif";
 import shopmodely from "../assets/images/shop-category-modely.avif";
 import shopcharging from "../assets/images/shop-category-charging.avif";
-import shopmensapp  from "../assets/images/shop-category-mensapp.avif";
-import shopwomensapp  from "../assets/images/shop-category-womensapp.avif";
-import shoplifestyle  from "../assets/images/shop-category-lifestyle.avif";
+import shopmensapp from "../assets/images/shop-category-mensapp.avif";
+import shopwomensapp from "../assets/images/shop-category-womensapp.avif";
+import shoplifestyle from "../assets/images/shop-category-lifestyle.avif";
 
 function Shop() {
   return (
@@ -102,7 +104,7 @@ function Shop() {
           </a>
         </Category>
       </Categories>
-
+      <ScrolTtop />
       <Footer />
     </Container>
   );

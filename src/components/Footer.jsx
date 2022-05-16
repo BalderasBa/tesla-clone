@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
 const Foot = styled.div`
@@ -30,15 +31,17 @@ const Foot = styled.div`
 `;
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <Foot>
-      <a href="#">Tesla &copy; {new Date().getFullYear()} </a>
-      <a href="#">Privacy & Legal</a>
-      <a href="contact">Contact</a>
-      <a href="#">Careers</a>
-      <a href="#">News</a>
-      <a href="#">Engage</a>
-      <a href="#">Locations</a>
+      <a href="#">{t("tesla")} &copy; {new Date().getFullYear()} </a>
+      <a href="#">{t("footer.privacy")}</a>
+      <a href="contact">{t("footer.contact")}</a>
+      <a href="#">{t("footer.career")}</a>
+      <a href="#">{t("footer.news")}</a>
+      <a href="#">{t("footer.engage")}</a>
+      <a href="#">{t("footer.locations")}</a>
     </Foot>
   );
 }

@@ -10,56 +10,58 @@ import modely from "../assets/images/model-y.jpg";
 import solarpanel from "../assets/images/solar-panel.jpg";
 import solarroof from "../assets/images/solar-roof.jpg";
 import accessories from "../assets/images/accessories.jpg";
+import { useTranslation } from "react-i18next";
 function Main() {
+  const { t } = useTranslation();
   return (
     <Container>
       <Section
         title="Model X"
-        description="Order Online for Touchless Delivery"
+        description={t("section.order")}
         backgroundImg={modelx}
-        leftBtnTxt="Custom Order"
-        rightBtnTxt="Existing Inventory"
+        leftBtnTxt={t("section.custom")}
+        rightBtnTxt={t("section.existing")}
       />
       <Section
         title="Model S"
-        description="Order Online for Touchless Delivery"
+        description={t("section.order")}
         backgroundImg={models}
-        leftBtnTxt="Custom Order"
-        rightBtnTxt="Existing Inventory"
+        leftBtnTxt={t("section.custom")}
+        rightBtnTxt={t("section.existing")}
       />
       <Section
         title="Model 3"
-        description="Order Online for Touchless Delivery"
+        description={t("section.order")}
         backgroundImg={model3}
-        leftBtnTxt="Custom Order"
-        rightBtnTxt="Existing Inventory"
+        leftBtnTxt={t("section.custom")}
+        rightBtnTxt={t("section.existing")}
       />
       <Section
         title="Model Y"
-        description="Order Online for Touchless Delivery"
+        description={t("section.order")}
         backgroundImg={modely}
-        leftBtnTxt="Custom Order"
-        rightBtnTxt="Existing Inventory"
+        leftBtnTxt={t("section.custom")}
+        rightBtnTxt={t("section.existing")}
       />
       <Section
-        title="Solar Panels"
-        description="Lowest Cost Solar Panels in America"
+        title={t("home.solarp")}
+        description={t("section.solar")}
         backgroundImg={solarpanel}
-        leftBtnTxt="Order Now"
-        rightBtnTxt="Learn more"
+        leftBtnTxt={t("section.ordernow")}
+        rightBtnTxt={t("section.learn")}
       />
       <Section
-        title="Solar Roof"
-        description="Produce Clean Energy From Your Roof"
+        title={t("home.solarr")}
+        description={t("section.roof")}
         backgroundImg={solarroof}
-        leftBtnTxt="Order Now"
-        rightBtnTxt="Learn more"
+        leftBtnTxt={t("section.ordernow")}
+        rightBtnTxt={t("section.learn")}
       />
       <Section
-        title="Accessories"
+        title={t("section.accssoir")}
         description=""
         backgroundImg={accessories}
-        leftBtnTxt="Shop Now"
+        leftBtnTxt={t("home.shopnow")}
       />
     </Container>
   );

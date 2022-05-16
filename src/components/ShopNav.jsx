@@ -11,11 +11,15 @@ import wallconnector from "../assets/images/wall_connector.jpg";
 import chillpulloverhoodie from "../assets/images/chill-pullover-hoodie.jpg";
 import wirelessportablecharger from "../assets/images/wireless-portable-charger.jpg";
 import logo from "../assets/images/logo.svg";
+import Langue from "./Langue";
+import { useTranslation } from "react-i18next";
 
 function ShopNav() {
   const [meganum, setMeganum] = useState(0);
   const [search, setSearch] = useState(false);
   const [sideMenu, setSideMenu] = useState(false);
+
+  const { t } = useTranslation();
 
   const renderContent = useCallback(() => {
     switch (meganum) {
@@ -24,22 +28,22 @@ function ShopNav() {
           <MegaMenu onMouseLeave={() => setMeganum(0)} key={1}>
             <Ul>
               <li>
-                <a href="#">At Home</a>
+                <a href="#">{t("shopnav.charging.home")}</a>
               </li>
             </Ul>
             <Ul>
               <li>
-                <a href="#">On the road</a>
+                <a href="#">{t("shopnav.charging.otr")}</a>
               </li>
             </Ul>
             <Ul>
               <li>
-                <a href="#">Parts</a>
+                <a href="#">{t("shopnav.charging.parts")}</a>
               </li>
             </Ul>
             <Image>
               <img src={wallconnector} alt="" />
-              <Hz>Wall Connector</Hz>
+              <Hz>{t("shopnav.charging.wc")}</Hz>
             </Image>
           </MegaMenu>
         );
@@ -51,25 +55,25 @@ function ShopNav() {
                 <a href="#">Model S</a>
               </li>
               <li>
-                <a href="#">Best Sellers</a>
+                <a href="#">{t("shopnav.va.bs")}</a>
               </li>
               <li>
-                <a href="#">Interior</a>
+                <a href="#">{t("shopnav.va.inter")}</a>
               </li>
               <li>
-                <a href="#">Exterior</a>
+                <a href="#">{t("shopnav.va.exter")}</a>
               </li>
               <li>
-                <a href="#">Wheels and Tries</a>
+                <a href="#">{t("shopnav.va.wat")}</a>
               </li>
               <li>
-                <a href="#">Floor Mats</a>
+                <a href="#">{t("shopnav.va.fm")}</a>
               </li>
               <li>
-                <a href="#">Parts</a>
+                <a href="#">{t("shopnav.va.parts")}</a>
               </li>
               <li>
-                <a href="#">Keys</a>
+                <a href="#">{t("shopnav.va.keys")}</a>
               </li>
             </Ul>
             <Ul>
@@ -77,25 +81,25 @@ function ShopNav() {
                 <a href="#">Model 3</a>
               </li>
               <li>
-                <a href="#">Best Sellers</a>
+                <a href="#">{t("shopnav.va.bs")}</a>
               </li>
               <li>
-                <a href="#">Interior</a>
+                <a href="#">{t("shopnav.va.inter")}</a>
               </li>
               <li>
-                <a href="#">Exterior</a>
+                <a href="#">{t("shopnav.va.exter")}</a>
               </li>
               <li>
-                <a href="#">Wheels and Tries</a>
+                <a href="#">{t("shopnav.va.wat")}</a>
               </li>
               <li>
-                <a href="#">Floor Mats</a>
+                <a href="#">{t("shopnav.va.fm")}</a>
               </li>
               <li>
-                <a href="#">Parts</a>
+                <a href="#">{t("shopnav.va.parts")}</a>
               </li>
               <li>
-                <a href="#">Keys</a>
+                <a href="#">{t("shopnav.va.keys")}</a>
               </li>
             </Ul>
             <Ul>
@@ -103,25 +107,25 @@ function ShopNav() {
                 <a href="#">Model X</a>
               </li>
               <li>
-                <a href="#">Best Sellers</a>
+                <a href="#">{t("shopnav.va.bs")}</a>
               </li>
               <li>
-                <a href="#">Interior</a>
+                <a href="#">{t("shopnav.va.inter")}</a>
               </li>
               <li>
-                <a href="#">Exterior</a>
+                <a href="#">{t("shopnav.va.exter")}</a>
               </li>
               <li>
-                <a href="#">Wheels and Tries</a>
+                <a href="#">{t("shopnav.va.wat")}</a>
               </li>
               <li>
-                <a href="#">Floor Mats</a>
+                <a href="#">{t("shopnav.va.fm")}</a>
               </li>
               <li>
-                <a href="#">Parts</a>
+                <a href="#">{t("shopnav.va.parts")}</a>
               </li>
               <li>
-                <a href="#">Keys</a>
+                <a href="#">{t("shopnav.va.keys")}</a>
               </li>
             </Ul>
             <Ul>
@@ -129,25 +133,25 @@ function ShopNav() {
                 <a href="#">Model Y</a>
               </li>
               <li>
-                <a href="#">Best Sellers</a>
+                <a href="#">{t("shopnav.va.bs")}</a>
               </li>
               <li>
-                <a href="#">Interior</a>
+                <a href="#">{t("shopnav.va.inter")}</a>
               </li>
               <li>
-                <a href="#">Exterior</a>
+                <a href="#">{t("shopnav.va.exter")}</a>
               </li>
               <li>
-                <a href="#">Wheels and Tries</a>
+                <a href="#">{t("shopnav.va.wat")}</a>
               </li>
               <li>
-                <a href="#">Floor Mats</a>
+                <a href="#">{t("shopnav.va.fm")}</a>
               </li>
               <li>
-                <a href="#">Parts</a>
+                <a href="#">{t("shopnav.va.parts")}</a>
               </li>
               <li>
-                <a href="#">Keys</a>
+                <a href="#">{t("shopnav.va.keys")}</a>
               </li>
             </Ul>
           </MegaMenu>
@@ -157,79 +161,79 @@ function ShopNav() {
           <MegaMenu onMouseLeave={() => setMeganum(0)} key={3}>
             <Ul>
               <li>
-                <a href="#">Men</a>
+                <a href="#">{t("shopnav.apparel.men")}</a>
               </li>
               <li>
-                <a href="#">Best Sellers</a>
+                <a href="#">{t("shopnav.apparel.bs")}</a>
               </li>
               <li>
-                <a href="#">Tees</a>
+                <a href="#">{t("shopnav.apparel.tees")}</a>
               </li>
               <li>
-                <a href="#">Sweatshirts & Hoodies</a>
+                <a href="#">{t("shopnav.apparel.swandhoo")}</a>
               </li>
               <li>
-                <a href="#">OuterWear</a>
+                <a href="#">{t("shopnav.apparel.outerw")}</a>
               </li>
               <li>
-                <a href="#">Joggers</a>
+                <a href="#">{t("shopnav.apparel.joggers")}</a>
               </li>
               <li>
-                <a href="#">Hats</a>
+                <a href="#">{t("shopnav.apparel.hats")}</a>
               </li>
               <li>
-                <a href="#">Socks</a>
-              </li>
-            </Ul>
-            <Ul>
-              <li>
-                <a href="#">Women</a>
-              </li>
-              <li>
-                <a href="#">Best Sellers</a>
-              </li>
-              <li>
-                <a href="#">Tees</a>
-              </li>
-              <li>
-                <a href="#">Sweatshirts & Hoodies</a>
-              </li>
-              <li>
-                <a href="#">OuterWear</a>
-              </li>
-              <li>
-                <a href="#">Joggers</a>
-              </li>
-              <li>
-                <a href="#">Hats</a>
-              </li>
-              <li>
-                <a href="#">Socks</a>
+                <a href="#">{t("shopnav.apparel.socks")}</a>
               </li>
             </Ul>
             <Ul>
               <li>
-                <a href="#">Kids</a>
+                <a href="#">{t("shopnav.apparel.women")}</a>
               </li>
               <li>
-                <a href="#">Best Sellers</a>
+                <a href="#">{t("shopnav.apparel.bs")}</a>
               </li>
               <li>
-                <a href="#">Tees</a>
+                <a href="#">{t("shopnav.apparel.tees")}</a>
               </li>
               <li>
-                <a href="#">OuterWear</a>
+                <a href="#">{t("shopnav.apparel.swandhoo")}</a>
               </li>
               <li>
-                <a href="#">Hats</a>
+                <a href="#">{t("shopnav.apparel.outerw")}</a>
               </li>
               <li>
-                <a href="#">Socks</a>
+                <a href="#">{t("shopnav.apparel.joggers")}</a>
+              </li>
+              <li>
+                <a href="#">{t("shopnav.apparel.hats")}</a>
+              </li>
+              <li>
+                <a href="#">{t("shopnav.apparel.socks")}</a>
+              </li>
+            </Ul>
+            <Ul>
+              <li>
+                <a href="#">{t("shopnav.apparel.kids")}</a>
+              </li>
+              <li>
+                <a href="#">{t("shopnav.apparel.bs")}</a>
+              </li>
+              <li>
+                <a href="#">{t("shopnav.apparel.tees")}</a>
+              </li>
+              <li>
+                <a href="#">{t("shopnav.apparel.outerw")}</a>
+              </li>
+              <li>
+                <a href="#">{t("shopnav.apparel.hats")}</a>
+              </li>
+              <li>
+                <a href="#">{t("shopnav.apparel.socks")}</a>
               </li>
             </Ul>
             <Image>
               <img src={chillpulloverhoodie} alt="" />
-              <Hz>Chill Pullover Hoodie</Hz>
+              <Hz>{t("shopnav.apparel.cph")}</Hz>
             </Image>
           </MegaMenu>
         );
@@ -238,22 +242,22 @@ function ShopNav() {
           <MegaMenu onMouseLeave={() => setMeganum(0)} key={4}>
             <Ul>
               <li>
-                <a href="#">At Home</a>
+                <a href="#">{t("shopnav.lifestyle.athome")}</a>
               </li>
             </Ul>
             <Ul>
               <li>
-                <a href="#">On the road</a>
+                <a href="#">{t("shopnav.lifestyle.ontr")}</a>
               </li>
             </Ul>
             <Ul>
               <li>
-                <a href="#">Parts</a>
+                <a href="#">{t("shopnav.lifestyle.parts")}</a>
               </li>
             </Ul>
             <Image>
               <img src={wirelessportablecharger} alt="" />
-              <Hz>Wireless Portable Charger 2.0</Hz>
+              <Hz>{t("shopnav.lifestyle.wpc")}</Hz>
             </Image>
           </MegaMenu>
         );
@@ -265,21 +269,21 @@ function ShopNav() {
     <>
       <Container>
         <a href="home">
-        <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" />
         </a>
-        <a href="shop">Shop</a>
+        <a href="shop">{t("home.shop")}</a>
         <Menu>
           <a href="#" onMouseOver={() => setMeganum(1)}>
-            Charging
+            {t("shopnav.charging")}
           </a>
           <a href="#" onMouseOver={() => setMeganum(2)}>
-            Vehicule Accessories
+            {t("shopnav.va")}
           </a>
           <a href="#" onMouseOver={() => setMeganum(3)}>
-            Apparel
+            {t("shopnav.apparel")}
           </a>
           <a href="#" onMouseOver={() => setMeganum(4)}>
-            Lifestyle
+            {t("shopnav.lifestyle")}
           </a>
         </Menu>
         <RightMenu>
@@ -305,24 +309,20 @@ function ShopNav() {
             <ShoppingCart />
           </a>
           <a href="#" onClick={() => setSideMenu(true)}>
-            Menu
+            {t("home.menu")}
           </a>
           <CustomMenu onClick={() => setSideMenu(true)} />
         </RightMenu>
         <SideNav show={sideMenu}>
           <CustomClose onClick={() => setSideMenu(false)} />
           <li>
-            <a href="#">Shop FAQ</a>
+            <a href="#">{t("shopnav.faq")}</a>
           </li>
           <li>
-            <a href="/  teslaclone">Sign In</a>
+            <a href="/  teslaclone">{t("signin.h1")}</a>
           </li>
           <li>
-            <select name="" id="">
-              <option value="en_US">English (English)</option>
-              <option value="ar_AE">العربية (Arabic)</option>
-              <option value="fr_FR">Français (French)</option>
-            </select>
+            <Langue />
           </li>
         </SideNav>
       </Container>
@@ -503,7 +503,6 @@ const SideNav = styled.div`
   right: 0;
   background-color: white;
   width: 300px;
-  overflow-y: scroll;
   z-index: 100;
   padding: 25px;
   display: flex;

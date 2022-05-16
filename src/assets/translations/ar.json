@@ -1,4 +1,10 @@
 {
+  "langue.en": "الانجليزية",
+  "langue.ar": "العربية",
+  "langue.fr": "الفرنسية",
+  "tesla":"تيسلا",
+
+
   "signin.h1": "تسجيل الدخول",
   "signin.next": "التالي",
   "signin.email.label": "البريد الكتروني",
@@ -13,7 +19,7 @@
 
   "home.model": "نموذج",
   "home.solarr": "سقف شمسي",
-  "home.solarp": "الألواح الشمسية",
+  "home.solarp": "ألواح شمسية",
   "home.shop": "متجر",
   "home.account": "الحساب",
   "home.menu": "قائمة",
@@ -35,5 +41,58 @@
 
   "section.order": "اطلب عبر الإنترنت للتسليم بدون لمس",
   "section.custom": "اطلب الزبون",
-  "section.existing": "الجرد الحالي"
+  "section.existing": "الجرد الحالي",
+
+  
+  "section.ordernow": "اطلب الان",
+  "section.learn": "تعلم أكثر",
+  "section.solar": "الألواح الشمسية الأقل تكلفة في أمريكا",
+  "section.roof": "أنتج طاقة نظيفة من سطح منزلك",
+  "section.accssoir": "مستلزمات",
+  "home.shopnow": "تسوق الآن",
+
+  "footer.privacy": "خصوصية & قوانين",
+  "footer.contact": "اتصال",
+  "footer.career": "وظائف",
+  "footer.news": "أخبار",
+  "footer.engage": "اشتراك - انخراط",
+  "footer.locations": "مواقع",
+  
+  "shopnav.charging": "الشحن",
+  "shopnav.charging.home": "الى المنزل",
+  "shopnav.charging.otr": "على الطريق",
+  "shopnav.charging.parts": "القطع",
+  "shopnav.charging.wc": "موصل الحائط",
+
+  "shopnav.va": "ملحقات المركبات",
+   "shopnav.va.bs": "الأفضل مبيعًا",
+   "shopnav.va.inter": "الداخلية" ,
+   "shopnav.va.exter": "المظهر الخارجي",
+   "shopnav.va.wat": "عجلات و إطارات",
+   "shopnav.va.fm": "سجاد الأرضية",
+   "shopnav.va.parts": "الأجزاء",
+   "shopnav.va.keys": "مفاتيح" ,
+
+  "shopnav.apparel": "ثياب",
+  "shopnav.apparel.men": "رجال",
+  "shopnav.apparel.women": "نساء",
+  "shopnav.apparel.kids": "أطفال",
+  "shopnav.apparel.cph": "كنزة صوفية رائعة",
+
+  "shopnav.apparel.bs": "أفضل البائعين",
+  "shopnav.apparel.tees": "قمصان",
+  "shopnav.apparel.swandhoo": "هوديس وبلوزات",
+  "shopnav.apparel.outerw": "ملابس خارجية",
+  "shopnav.apparel.joggers": "ركض",
+  "shopnav.apparel.hats": "قبعات",
+  "shopnav.apparel.socks": "جوارب",
+
+  "shopnav.lifestyle": "أسلوب الحياة",
+  "shopnav.lifestyle.athome": "فى المنزل",
+  "shopnav.lifestyle.ontr": "على الطريق",
+  "shopnav.lifestyle.parts": "القطع",
+  "shopnav.lifestyle.wpc": "شاحن لاسلكي محمول 2.0",
+
+  "shopnav.faq": "أسئلة مكررة"
+
 }

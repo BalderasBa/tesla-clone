@@ -5,10 +5,13 @@ import { selectCars } from "../features/car/CarSlice";
 import { useSelector } from "react-redux";
 
 import logo from "../assets/images/logo.svg";
+import Langue from "./Langue";
+import { useTranslation } from "react-i18next";
 
 function Header() {
   const [sideMenu, setSideMenu] = useState(false);
   // const cars = useSelector(selectCars);
+  const { t } = useTranslation();
 
   return (
     <Container>
@@ -17,71 +20,69 @@ function Header() {
       </a>
       <Menu>
         {/* {cars && cars.map((car, index) => <a key={index} href="#">{car}</a>)} */}
-        <a href="#">Model S</a>
-        <a href="#">Model 3</a>
-        <a href="#">Model X</a>
-        <a href="#">Model Y</a>
-        <a href="#">Solar Roof</a>
-        <a href="#">Solqr Panels</a>
+        <a href="#">{t("home.model")} S</a>
+        <a href="#">{t("home.model")} 3</a>
+        <a href="#">{t("home.model")} X</a>
+        <a href="#">{t("home.model")} Y</a>
+        <a href="#">{t("home.solarr")}</a>
+        <a href="#">{t("home.solarp")}</a>
       </Menu>
       <RightMenu>
-        <a href="/teslaclone/shop">Shop</a>
-        <a href="/teslaclone/account">Account</a>
+        <a href="/teslaclone/shop">{t("home.shop")}</a>
+        <a href="/teslaclone/account">{t("home.account")}</a>
         <a href="#" onClick={() => setSideMenu(true)}>
-          Menu
+          {t("home.menu")}
         </a>
         <CustomMenu onClick={() => setSideMenu(true)} />
       </RightMenu>
       <SideNav show={sideMenu}>
         <CustomClose onClick={() => setSideMenu(false)} />
+
         <li>
-          <a href="#">Existing Inventory</a>
+          <a href="#">{t("home.menu.existing")}</a>
         </li>
         <li>
-          <a href="#">Used Inventory</a>
+          <a href="#">{t("home.menu.used")}</a>
         </li>
         <li>
-          <a href="#">Trade-In</a>
+          <a href="#">{t("home.menu.trade")}</a>
         </li>
         <li>
-          <a href="#">Test Drive</a>
+          <a href="#">{t("home.menu.test")}</a>
         </li>
         <li>
-          <a href="#">Cybertruck</a>
+          <a href="#">{t("home.menu.cybertruck")}</a>
         </li>
         <li>
-          <a href="#">Roadster</a>
+          <a href="#">{t("home.menu.roadster")}</a>
         </li>
         <li>
-          <a href="#">Semi</a>
+          <a href="#">{t("home.menu.semi")}</a>
         </li>
         <li>
-          <a href="#">Charging</a>
+          <a href="#">{t("home.menu.charging")}</a>
+        </li>
+
+        <li>
+          <a href="#">{t("home.menu.powerwall")}</a>
         </li>
         <li>
-          <a href="#">Powerwall</a>
+          <a href="#">{t("home.menu.commercial")}</a>
         </li>
         <li>
-          <a href="#">Commercial Energy</a>
+          <a href="#">{t("home.menu.utilities")}</a>
         </li>
         <li>
-          <a href="#">Utilities</a>
+          <a href="#">{t("home.menu.find")}</a>
         </li>
         <li>
-          <a href="#">Find Us</a>
+          <a href="#">{t("home.menu.support")}</a>
         </li>
         <li>
-          <a href="#">Support</a>
+          <a href="#">{t("home.menu.investor")}</a>
         </li>
         <li>
-          <a href="#">Investor Relations</a>
-        </li>
-        <li>
-          <select name="" id="">
-            <option value="en_US">English (English)</option>
-            <option value="ar_AE">العربية (Arabic)</option>
-            <option value="fr_FR">Français (French)</option>
-          </select>
+          <Langue />
         </li>
       </SideNav>
     </Container>

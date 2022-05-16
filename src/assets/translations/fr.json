@@ -1,4 +1,9 @@
 {
+  "langue.en": "Anglais",
+  "langue.ar": "Arabe",
+  "langue.fr": "Français",
+  "tesla":"Tesla",
+
   "signin.h1": "Connexion",
   "signin.next": "Suivant",
   "signin.email.label": "Adresse e-mail",
@@ -35,5 +40,58 @@
 
   "section.order": "Commandez en ligne pour une livraison sans contact",
   "section.custom": "Commande personnalisée",
-  "section.existing": "inventaire existant"
+  "section.existing": "inventaire existant",
+  
+  "section.ordernow": "Commandez maintenant",
+  "section.learn": "apprendre plus",
+  "section.solar": "Panneaux solaires les moins chers en Amérique",
+  "section.roof": "Produisez de l'énergie propre à partir de votre toit",
+  "section.accssoir": "Accessoires",
+  "home.shopnow": "Achetez maintenant",
+
+  "footer.privacy": "Confidentialité & Légale",
+  "footer.contact": "Contacter",
+  "footer.career": "Carrières",
+  "footer.news": "Nouvelles",
+  "footer.engage": "Engager",
+  "footer.locations": "Emplacements",
+
+  "shopnav.charging": "Mise en charge",
+  "shopnav.charging.home": "À la maison",
+  "shopnav.charging.otr": "Sur la route",
+  "shopnav.charging.parts": "les pièces",
+  "shopnav.charging.wc": "Connecteur mural",
+
+
+  "shopnav.va": "Accessoires de véhicule",
+  "shopnav.va.bs": "Meilleures ventes",
+  "shopnav.va.inter": "Intérieur",
+  "shopnav.va.exter": "Extérieur",
+  "shopnav.va.wat": "Roues et essais",
+  "shopnav.va.fm": "Tapis de sol",
+  "shopnav.va.parts": "Pièces",
+  "shopnav.va.keys": "Clés",
+
+  "shopnav.apparel": "Vêtements",
+  "shopnav.apparel.men": "Hommes",
+  "shopnav.apparel.women": "Femmes",
+  "shopnav.apparel.kids": "Enfants",
+  "shopnav.apparel.cph": "Refroidir Sweat à capuche épais",
+
+  "shopnav.apparel.bs": "Meilleures vendeures",
+  "shopnav.apparel.tees": "Tee-shirts",
+  "shopnav.apparel.swandhoo": "Sweats et sweats à capuche",
+  "shopnav.apparel.outerw": "Vêtements d'extérieur",
+  "shopnav.apparel.joggers": "Joggeurs",
+  "shopnav.apparel.hats": "Chapeaux",
+  "shopnav.apparel.socks": "Chaussettes",
+
+  "shopnav.lifestyle": "Mode de vie",
+  "shopnav.lifestyle.athome": "À la maison",
+  "shopnav.lifestyle.ontr": "Sur la route",
+  "shopnav.lifestyle.parts": "Pièces",
+  "shopnav.lifestyle.wpc": "Chargeur portatif sans fil 2.0",
+
+  "shopnav.faq": "boutique FAQ "
+
 }
